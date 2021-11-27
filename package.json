@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sharp2point/nodejs/issues"
   },
-  "homepage": "https://github.com/sharp2point/nodejs#readme"
+  "homepage": "https://github.com/sharp2point/nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
