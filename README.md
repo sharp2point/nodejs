@@ -3,12 +3,12 @@
 Пример запуска FlutterWeb приложения на nodejs/express платформе.
 
 инструменты:
-  node.js
-  express.js
-  express-handlebars.js 
-  pm2
-  flutter web
-  NGINX
+  node.js,
+  express.js,
+  express-handlebars.js, 
+  pm2,
+  flutter web,
+  NGINX,
 
 За запуск сервера отвечает файл index.js сервер стартует на порту 3000 коммандой pm2 start index.js
 
