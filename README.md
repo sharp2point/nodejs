@@ -1,23 +1,29 @@
 
 
-Пример запуска FlutterWeb приложения на nodejs/express платформе.
+# Пример запуска FlutterWeb приложения на nodejs/express платформе.
 
-инструменты:
-  node.js,
-  express.js,
-  express-handlebars.js, 
-  pm2,
-  flutter web,
-  NGINX,
+## Инструменты:
+  * node.js,
+  * express.js,
+  * express-handlebars.js, 
+  * pm2,
+  * flutter web,
+  * NGINX,
 
-За запуск сервера отвечает файл index.js сервер стартует на порту 3000 коммандой pm2 start index.js
+## Запуск:
 
-Приложение Flutter лежит в папке public/flutter, встраивается в шаблон main.handlebars с помощью iframe: <iframe src="/flutter/index.html"></iframe>
+За запуск сервера отвечает файл index.js сервер стартует на порту 3000 коммандой:  ***_pm2 start index.js_***
 
-Пример настройки сервера NGINX:
+Приложение Flutter лежит в папке public/flutter, встраивается в шаблон main.handlebars с помощью iframe: ***_<iframe src="/flutter/index.html"></iframe>_***
 
-  server {
+## Пример настройки сервера NGINX:
+
+
+
+ server{
+ 
           listen 80;
+          
           server_name you_server_name;
 
           root /home/sharp/apps/nodejs;
@@ -31,5 +37,4 @@
                   proxy_set_header Host $host;
                   proxy_cache_bypass $http_upgrade;
           }
-
   }
